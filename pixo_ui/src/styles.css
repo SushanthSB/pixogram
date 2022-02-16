@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.page-header {
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: monospace;
+}
+
+.pixo-snackbar {
+    background: #c2185b;
+    color: #fafafa;
+}

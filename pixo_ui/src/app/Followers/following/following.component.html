@@ -1,0 +1,24 @@
+
+    <div class="row">
+        <div class="col-md-4" style="width: 30%; height: 30%;" *ngFor='let users of userswithprofilepic'>
+            <div class="card p-3">
+
+    <div class="max-w-xs mx-auto bg-white rounded-md" >
+        <div class="md:flex">
+            <div class="">
+                <div class="flex justify-between items-center p-3">
+                    <div class="flex flex-row items-center"> <img src="{{users.profilepic}}" class="rounded-full" width="20">
+                        <div class="flex flex-row items-center ml-2"> <span class="font-bold mr-1">{{users.firstname}} {{users.lastname}}</span> <small class="h-1 w-1 bg-gray-300 rounded-full mr-1 mt-1"></small> <a (click)='followUser(users)' class="text-blue-600 text-sm hover:text-blue-800">Follow</a> </div>
+                    </div>
+                    <div class="pr-2"> <i class="fa fa-ellipsis-h text-gray-400 hover:cursor-pointer hover:text-gray-600"></i> </div>
+                </div>
+                <div> <img src="{{users.profilepic}}" class="w-full h-75"> </div>
+                <!-- <div class="p-4 flex justify-between items-center">
+                    <div class="flex flex-row items-center"> <i class="fa fa-heart-o mr-2 fa-1x hover:text-gray-600"></i> <i class="fa fa-comment-o mr-2 fa-1x hover:text-gray-600"></i> <i class="fa fa-send-o mr-2 fa-1x hover:text-gray-600"></i> </div>
+                    <div> <i class="fa fa-bookmark-o fa-1x hover:text-gray-600"></i> </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+</div></div></div>

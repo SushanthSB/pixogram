@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div fxShow="true" fxFlex fxLayout>
+      <span class="brand" >
+        Pixo
+      </span>
+      <div fxFlex>
+        <a routerLink='./singlemedia' mat-button >Upload Media</a>
+        <a routerLink='./mymedia' mat-button >My Media</a>
+        <a routerLink="./followers" mat-button >Followers/Followers</a>
+      </div>
+
+      <div fxFlex fxLayoutAlign="flex-end center" *ngIf="this.heading!='Login' || this.heading!='register'">
+        <a mat-icon-button style="margin-right: 10px;">
+          <mat-icon style="font-size: 40px;" *ngIf="!avatar">
+            account_circle
+          </mat-icon>
+          <img style="border-radius: 50%; height: 95%;" *ngIf="avatar" [src]="avatar" />
+        </a>
+      </div>
+
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container fxFlexFill (backdropClick)="opened = !opened">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-sidenav-container>
